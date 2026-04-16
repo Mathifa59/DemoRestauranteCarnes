@@ -48,7 +48,7 @@ export default function Gallery() {
           <p className="text-xs font-medium tracking-[0.4em] uppercase text-brand-gold">
             Galería
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-heading)] text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
             Momentos que{" "}
             <span className="italic text-brand-gold/90">inspiran</span>
           </h2>
