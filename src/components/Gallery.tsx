@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const images = [
   { src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80", alt: "Restaurant interior ambiance", span: "col-span-2 row-span-2" },
-  { src: "https://images.unsplash.com/photo-1432139509613-5c4255a1d1f3?w=800&q=80", alt: "Seared steak close-up", span: "col-span-1 row-span-1" },
+  { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80", alt: "Seared steak close-up", span: "col-span-1 row-span-1" },
   { src: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80", alt: "Wine selection", span: "col-span-1 row-span-1" },
   { src: "https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80", alt: "Chef at the grill", span: "col-span-1 row-span-2" },
   { src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", alt: "Plated dish presentation", span: "col-span-1 row-span-1" },
