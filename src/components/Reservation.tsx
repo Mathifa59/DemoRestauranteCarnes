@@ -38,7 +38,7 @@ export default function Reservation() {
           <p className="text-xs font-medium tracking-[0.4em] uppercase text-brand-gold">
             Reservaciones
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-heading)] text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
             Tu mesa te{" "}
             <span className="italic text-brand-gold/90">espera</span>
           </h2>
@@ -83,7 +83,7 @@ export default function Reservation() {
                     <p className="text-xs tracking-widest uppercase text-brand-gold/60">
                       {item.label}
                     </p>
-                    <p className="mt-1 font-[family-name:var(--font-heading)] text-lg text-brand-light">
+                    <p className="mt-1 font-heading text-lg text-brand-light">
                       {item.value}
                     </p>
                     <p className="mt-0.5 text-xs text-brand-light/40">
@@ -95,7 +95,7 @@ export default function Reservation() {
             </div>
 
             {/* Map placeholder */}
-            <div className="mt-10 relative aspect-[16/9] overflow-hidden border border-brand-gold/10 bg-brand-surface/50">
+            <div className="mt-10 relative aspect-video overflow-hidden border border-brand-gold/10 bg-brand-surface/50">
               <Image
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80"
                 alt="Location map"
@@ -119,7 +119,7 @@ export default function Reservation() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-3"
           >
-            <form className="border border-brand-gold/10 bg-brand-surface/30 p-8 backdrop-blur-sm lg:p-10">
+            <form className="border border-brand-gold/10 bg-brand-surface/30 p-5 backdrop-blur-sm sm:p-8 lg:p-10">
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {/* Name */}
                 <div className="group">

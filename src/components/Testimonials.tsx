@@ -49,8 +49,8 @@ export default function Testimonials() {
       className="relative overflow-hidden bg-brand-surface py-28 lg:py-36"
     >
       {/* Decorative lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/15 to-transparent" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/15 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-brand-gold/15 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-brand-gold/15 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
@@ -64,7 +64,7 @@ export default function Testimonials() {
           <p className="text-xs font-medium tracking-[0.4em] uppercase text-brand-gold">
             Testimonios
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-heading)] text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
             Lo que dicen{" "}
             <span className="italic text-brand-gold/90">nuestros</span>{" "}
             invitados
@@ -78,7 +78,7 @@ export default function Testimonials() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3"
+          className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {testimonials.map((t) => (
             <motion.div

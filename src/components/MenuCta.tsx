@@ -8,7 +8,7 @@ export default function MenuCta() {
   return (
     <section className="relative overflow-hidden bg-brand-surface py-20 lg:py-28">
       {/* Decorative lines */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/15 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-brand-gold/15 to-transparent" />
 
       {/* Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[300px] w-[300px] rounded-full bg-brand-primary/5 blur-[120px]" />
@@ -23,7 +23,7 @@ export default function MenuCta() {
           <p className="text-xs font-medium tracking-[0.4em] uppercase text-brand-gold">
             Te esperamos
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-heading)] text-3xl font-bold text-brand-light sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl">
             ¿Listo para{" "}
             <span className="italic text-brand-gold/90">la experiencia?</span>
           </h2>

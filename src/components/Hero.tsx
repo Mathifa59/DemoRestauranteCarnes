@@ -20,7 +20,7 @@ export default function Hero() {
         />
         <div className="overlay-dark absolute inset-0" />
         {/* Extra bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-brand-dark to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-t from-brand-dark to-transparent" />
       </div>
 
       {/* Content */}
@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-8 h-px w-24 bg-gradient-to-r from-transparent via-brand-gold to-transparent"
+          className="mb-8 h-px w-24 bg-linear-to-r from-transparent via-brand-gold to-transparent"
         />
 
         {/* Tagline */}
@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="font-[family-name:var(--font-heading)] text-5xl font-bold leading-tight tracking-tight text-brand-light sm:text-6xl md:text-7xl lg:text-8xl"
+          className="font-heading text-3xl font-bold leading-tight tracking-tight text-brand-light xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
         >
           El Arte del
           <br />
@@ -93,7 +93,7 @@ export default function Hero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1.2, delay: 1.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 h-px w-16 bg-gradient-to-r from-transparent via-brand-gold/40 to-transparent"
+          className="mt-10 h-px w-16 bg-linear-to-r from-transparent via-brand-gold/40 to-transparent"
         />
       </div>
 

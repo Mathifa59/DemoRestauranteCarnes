@@ -52,7 +52,7 @@ export default function Features() {
   return (
     <section className="relative overflow-hidden bg-brand-dark py-28 lg:py-36">
       {/* Subtle top border glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-2/3 bg-gradient-to-r from-transparent via-brand-gold/20 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-2/3 bg-linear-to-r from-transparent via-brand-gold/20 to-transparent" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section header */}
@@ -66,7 +66,7 @@ export default function Features() {
           <p className="text-xs font-medium tracking-[0.4em] uppercase text-brand-gold">
             Nuestra Filosofía
           </p>
-          <h2 className="mt-4 font-[family-name:var(--font-heading)] text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl lg:text-5xl">
             Más que un restaurante,
             <br />
             <span className="italic text-brand-gold/90">una experiencia</span>
@@ -95,7 +95,7 @@ export default function Features() {
               <div className="absolute bottom-0 right-0 h-px w-4 bg-brand-gold/30 transition-all duration-500 group-hover:w-6 group-hover:bg-brand-gold/60" />
 
               <feature.icon className="mb-6 h-8 w-8 text-brand-accent transition-colors duration-300 group-hover:text-brand-gold" />
-              <h3 className="mb-3 font-[family-name:var(--font-heading)] text-xl font-semibold text-brand-light">
+              <h3 className="mb-3 font-heading text-xl font-semibold text-brand-light">
                 {feature.title}
               </h3>
               <p className="text-sm leading-relaxed text-brand-light/50 font-light">

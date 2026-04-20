@@ -18,7 +18,7 @@ export default function MenuHero() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/80 via-brand-dark/50 to-brand-dark" />
+        <div className="absolute inset-0 bg-linear-to-b from-brand-dark/80 via-brand-dark/50 to-brand-dark" />
       </div>
 
       {/* Content */}
@@ -43,7 +43,7 @@ export default function MenuHero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-6 h-px w-20 bg-gradient-to-r from-transparent via-brand-gold to-transparent"
+          className="mb-6 h-px w-20 bg-linear-to-r from-transparent via-brand-gold to-transparent"
         />
 
         <motion.p
@@ -59,7 +59,7 @@ export default function MenuHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 font-[family-name:var(--font-heading)] text-4xl font-bold text-brand-light sm:text-5xl lg:text-6xl"
+          className="mt-4 font-heading text-3xl font-bold text-brand-light sm:text-4xl md:text-5xl lg:text-6xl"
         >
           Cortes selectos,{" "}
           <span className="italic text-brand-gold/90">fuego preciso</span>
@@ -79,7 +79,7 @@ export default function MenuHero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-6 h-px w-12 bg-gradient-to-r from-transparent via-brand-gold/40 to-transparent"
+          className="mt-6 h-px w-12 bg-linear-to-r from-transparent via-brand-gold/40 to-transparent"
         />
       </div>
     </section>

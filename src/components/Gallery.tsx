@@ -61,7 +61,7 @@ export default function Gallery() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="mt-16 grid auto-rows-[200px] grid-cols-2 gap-3 sm:auto-rows-[240px] md:grid-cols-4 md:gap-4 lg:auto-rows-[280px]"
+          className="mt-16 grid auto-rows-[160px] grid-cols-1 gap-3 xs:grid-cols-2 xs:auto-rows-[180px] sm:auto-rows-[220px] md:grid-cols-4 md:gap-4 md:auto-rows-[240px] lg:auto-rows-[280px]"
         >
           {images.map((img, i) => (
             <motion.div

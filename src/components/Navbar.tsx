@@ -59,7 +59,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="group flex items-center gap-3">
               <div className="flex flex-col">
-                <span className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-wider text-brand-light">
+                <span className="font-heading text-2xl font-bold tracking-wider text-brand-light">
                   FUEGO
                 </span>
                 <span className="text-[10px] font-light tracking-[0.3em] uppercase text-brand-gold">
@@ -74,7 +74,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative text-sm font-light tracking-wide transition-colors duration-300 hover:text-brand-light after:absolute after:bottom-[-4px] after:left-0 after:h-[1px] after:w-0 after:bg-brand-gold after:transition-all after:duration-300 hover:after:w-full ${
+                  className={`relative text-sm font-light tracking-wide transition-colors duration-300 hover:text-brand-light after:absolute after:bottom-[-4px] after:left-0 after:h-px after:w-0 after:bg-brand-gold after:transition-all after:duration-300 hover:after:w-full ${
                     isActive(link.href)
                       ? "text-brand-gold after:w-full"
                       : "text-brand-light/70"
@@ -115,11 +115,11 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[60] bg-brand-dark/98 backdrop-blur-xl"
+            className="fixed inset-0 z-60 bg-brand-dark/98 backdrop-blur-xl"
           >
             <div className="flex h-full flex-col px-6 py-6">
               <div className="flex items-center justify-between">
-                <span className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-wider text-brand-light">
+                <span className="font-heading text-2xl font-bold tracking-wider text-brand-light">
                   FUEGO
                 </span>
                 <button
@@ -142,7 +142,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className={`font-[family-name:var(--font-heading)] text-3xl font-light transition-colors hover:text-brand-gold ${
+                      className={`font-heading text-3xl font-light transition-colors hover:text-brand-gold ${
                         isActive(link.href)
                           ? "text-brand-gold"
                           : "text-brand-light/80"

@@ -401,7 +401,7 @@ function FeaturedCard({ dish }: { dish: Dish }) {
     >
       {/* Image */}
       {dish.image && (
-        <div className="relative aspect-[16/10] overflow-hidden">
+        <div className="relative aspect-16/10 overflow-hidden">
           <Image
             src={dish.image}
             alt={dish.name}
@@ -409,7 +409,7 @@ function FeaturedCard({ dish }: { dish: Dish }) {
             className="object-cover transition-transform duration-700 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/30 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-brand-dark via-brand-dark/30 to-transparent" />
 
           {/* Tag on image */}
           {dish.tag && (
@@ -420,7 +420,7 @@ function FeaturedCard({ dish }: { dish: Dish }) {
 
           {/* Price overlay */}
           <div className="absolute bottom-4 right-4">
-            <span className="font-[family-name:var(--font-heading)] text-2xl font-bold text-brand-gold drop-shadow-lg">
+            <span className="font-heading text-2xl font-bold text-brand-gold drop-shadow-lg">
               {dish.price}
             </span>
           </div>
@@ -429,7 +429,7 @@ function FeaturedCard({ dish }: { dish: Dish }) {
 
       {/* Content */}
       <div className="p-6">
-        <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-brand-light transition-colors duration-300 group-hover:text-brand-gold">
+        <h4 className="font-heading text-lg font-semibold text-brand-light transition-colors duration-300 group-hover:text-brand-gold">
           {dish.name}
         </h4>
         <p className="mt-2 text-sm font-light leading-relaxed text-brand-light/45">
@@ -449,7 +449,7 @@ function DishRow({ dish }: { dish: Dish }) {
       <div className="flex items-start justify-between gap-4">
         <div className="flex-1">
           <div className="flex flex-wrap items-center gap-3">
-            <h4 className="font-[family-name:var(--font-heading)] text-base font-semibold text-brand-light transition-colors duration-300 group-hover:text-brand-gold sm:text-lg">
+            <h4 className="font-heading text-base font-semibold text-brand-light transition-colors duration-300 group-hover:text-brand-gold sm:text-lg">
               {dish.name}
             </h4>
             {dish.tag && <DishTag tag={dish.tag} />}
@@ -461,7 +461,7 @@ function DishRow({ dish }: { dish: Dish }) {
         {/* Dotted line + price */}
         <div className="flex shrink-0 items-center gap-3 pt-1">
           <div className="hidden w-16 border-b border-dotted border-brand-gold/15 sm:block" />
-          <span className="font-[family-name:var(--font-heading)] text-lg font-bold text-brand-accent transition-colors duration-300 group-hover:text-brand-gold whitespace-nowrap">
+          <span className="font-heading text-lg font-bold text-brand-accent transition-colors duration-300 group-hover:text-brand-gold whitespace-nowrap">
             {dish.price}
           </span>
         </div>
@@ -484,7 +484,7 @@ export default function MenuSection() {
       className="relative overflow-hidden bg-brand-dark py-16 lg:py-20"
     >
       {/* Background accents */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-brand-gold/15 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-brand-gold/15 to-transparent" />
       <div className="absolute top-1/4 right-0 h-[400px] w-[400px] rounded-full bg-brand-primary/4 blur-[150px]" />
       <div className="absolute bottom-1/4 left-0 h-[300px] w-[300px] rounded-full bg-brand-accent/3 blur-[120px]" />
 
@@ -499,8 +499,8 @@ export default function MenuSection() {
         >
           <div className="relative">
             {/* Scroll shadow hints on mobile */}
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-8 bg-gradient-to-l from-brand-dark to-transparent sm:hidden" />
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-8 bg-gradient-to-r from-brand-dark to-transparent sm:hidden" />
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 z-10 w-8 bg-linear-to-l from-brand-dark to-transparent sm:hidden" />
+            <div className="pointer-events-none absolute left-0 top-0 bottom-0 z-10 w-8 bg-linear-to-r from-brand-dark to-transparent sm:hidden" />
 
             <div className="scrollbar-hide flex gap-2 overflow-x-auto px-4 pb-2 sm:flex-wrap sm:justify-center sm:gap-3 sm:px-0">
               {categories.map((cat) => (
@@ -562,9 +562,9 @@ export default function MenuSection() {
             {/* Separator between featured and list */}
             {featured.length > 0 && regular.length > 0 && (
               <div className="my-10 flex items-center gap-4">
-                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-brand-gold/10" />
+                <div className="h-px flex-1 bg-linear-to-r from-transparent to-brand-gold/10" />
                 <Sparkle className="h-4 w-4 text-brand-gold/20" />
-                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-brand-gold/10" />
+                <div className="h-px flex-1 bg-linear-to-l from-transparent to-brand-gold/10" />
               </div>
             )}
 

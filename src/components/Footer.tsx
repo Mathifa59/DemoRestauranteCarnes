@@ -28,11 +28,11 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-brand-gold/8 bg-brand-dark">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex flex-col">
-              <span className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-wider text-brand-light">
+              <span className="font-heading text-3xl font-bold tracking-wider text-brand-light">
                 FUEGO
               </span>
               <span className="text-[10px] font-light tracking-[0.3em] uppercase text-brand-gold">
